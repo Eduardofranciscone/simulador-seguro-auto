@@ -37,14 +37,16 @@ $(document).ready(function() {
                 if (cidade && cidade.toLowerCase() === "rio de janeiro" && valorFipe > 30000) {
                     // $("#resultado").append("<br>Seu seguro foi liberado").css("color", "green");
                     $("#resultado").append("<div class='alert alert-success alert-dismissible' id='show'>");
-                    $("#show").append("<button type='button' class='btn-close' data-bs-dismiss='alert'></button>")
                     $("#show").append("<strong>Sucesso !</strong> Seu seguro foi aprovado!!!.")
                     $("#show").append("</div>")                  
                 }else {
-                    $("#resultado").append("<br>Infelizmente o seguro não foi aceito").css("color", "red");
+                    // $("#resultado").append("<br>Infelizmente o seguro não foi aceito").css("color", "red");
+                    $("#resultado").append("<div class='alert alert-danger' id='show'>");
+                    $("#show").append("<strong>Infelizmente o seguro não foi aceito</strong>")
+                    $("#show").append("</div>") 
                 }
             } else {
-                $("#resultado").html("Erro ao buscar o valor FIPE. Verifique o código FIPE.");
+                $("#resultado").append("Erro ao buscar o valor FIPE. Verifique o código FIPE.");
             }
         })
     });
