@@ -18,6 +18,8 @@ O sistema realiza os seguintes passos:
 5. ✅ O seguro é **aprovado ou recusado** com base nas regras:
    - O veículo deve valer **mais de R$ 30.000**
    - A cidade deve ser **Rio de Janeiro**
+   - 
+<a href="https://venerable-fairy-f880a9.netlify.app/">Acesse aqui</a>
 
 ---
 
@@ -32,7 +34,6 @@ E
 ➡️ Seguro APROVADO ✅
 Caso contrário:
 ➡️ Seguro RECUSADO ❌
-```
-<a href="https://venerable-fairy-f880a9.netlify.app/"> Acesse aqui</a>
+
 
 
