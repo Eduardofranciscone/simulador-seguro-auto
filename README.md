@@ -23,7 +23,7 @@ O sistema realiza os seguintes passos:
 
 ## ⚙️ Regras de Negócio Implementadas
 
-```text
+```
 Se:
 - Cidade === "Rio de Janeiro"
 E
@@ -32,5 +32,7 @@ E
 ➡️ Seguro APROVADO ✅
 Caso contrário:
 ➡️ Seguro RECUSADO ❌
-
+```
 <a href="https://venerable-fairy-f880a9.netlify.app/">Acesse aqui</a>
+
+
