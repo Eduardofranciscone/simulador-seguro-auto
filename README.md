@@ -33,6 +33,6 @@ E
 Caso contrário:
 ➡️ Seguro RECUSADO ❌
 ```
-<a href="https://venerable-fairy-f880a9.netlify.app/">Acesse aqui</a>
+<a href="https://venerable-fairy-f880a9.netlify.app/"> Acesse aqui</a>
 
 
