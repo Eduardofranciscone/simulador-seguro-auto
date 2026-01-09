@@ -1,31 +1,40 @@
 # 🚗💼 Simulador de Seguro de Veículos
 
-Projeto desenvolvido com o objetivo de simular a **análise e aprovação de um seguro de veículo**, utilizando dados reais de **CEP** e **Tabela FIPE**, consumidos via API pública.
-## 🧠 Como funciona a simulação
+Projeto desenvolvido para simular a **análise e aprovação de seguro automotivo**, utilizando dados reais de **CEP** e **Tabela FIPE**, consumidos via **BrasilAPI**.
 
-O sistema realiza os seguintes passos:
-
-1. 📍 O usuário informa um **CEP**
-2. 🌎 O sistema consulta a **BrasilAPI** e obtém:
-   - Rua  
-   - Bairro  
-   - Cidade  
-3. 🚘 O usuário informa o **código FIPE** do veículo
-4. 💰 O sistema consulta a **Tabela FIPE** via BrasilAPI e obtém:
-   - Modelo do veículo  
-   - Ano  
-   - Valor de mercado  
-5. ✅ O seguro é **aprovado ou recusado** com base nas regras:
-   - O veículo deve valer **mais de R$ 30.000**
-   - A cidade deve ser **Rio de Janeiro**
-   - 
-<a href="https://venerable-fairy-f880a9.netlify.app/"> Acesse aqui</a>
+📌 Projeto focado em **consumo de APIs**, **lógica condicional** e **integração Front-end**.
 
 ---
 
-## ⚙️ Regras de Negócio Implementadas
+## 🔗 Demo do Projeto
 
-```
+<p align="center">
+  <a href="https://venerable-fairy-f880a9.netlify.app/" target="_blank">
+    🚀 <strong>Acesse a simulação online</strong>
+  </a>
+</p>
+
+---
+
+## 🧠 Como funciona a simulação
+
+1. 📍 O usuário informa um **CEP**
+2. 🌎 O sistema consulta a **BrasilAPI** e retorna:
+   - Rua  
+   - Bairro  
+   - Cidade  
+3. 🚘 O usuário informa o **código FIPE**
+4. 💰 O sistema consulta a **Tabela FIPE** e obtém:
+   - Modelo do veículo  
+   - Ano  
+   - Valor de mercado  
+5. ✅ O sistema analisa e decide se o seguro é aprovado ou não
+
+---
+
+## ⚙️ Regras de Negócio
+
+```text
 Se:
 - Cidade === "Rio de Janeiro"
 E
@@ -39,16 +48,14 @@ Caso contrário:
 
 🌐 HTML5 — Estrutura da aplicação
 
-🎨 Bootstrap 5 — Estilização e alerts (em evolução)
+🎨 Bootstrap 5 — Alerts e layout responsivo
 
 ⚡ JavaScript (ES6) — Lógica da aplicação
 
 🔄 jQuery — Manipulação do DOM e requisições AJAX
 
-🌍 BrasilAPI — Consumo de dados reais:
+🌍 BrasilAPI — Dados reais:
 
 API de CEP
 
 API da Tabela FIPE
-
-
