@@ -16,9 +16,9 @@ $(document).ready(function() {
                 cidade = dataCep.city;
                 
                 // Exibe Rua, Bairro e Cidade
-                $("#resultado").html("Rua: " + rua + "<br>Bairro: " + bairro + "<br>Cidade: " + cidade);
+                $("#resultado-cep").html("Rua: " + rua + "<br>Bairro: " + bairro + "<br>Cidade: " + cidade);
             } else {
-                $("#resultado").html("Erro ao buscar o CEP. Verifique se ele está correto.");
+                $("#resultado-cep").html("Erro ao buscar o CEP. Verifique se ele está correto.");
             }
         })
     });
@@ -32,7 +32,7 @@ $(document).ready(function() {
         $.get(urlFipe, function(dataFipe, statusFipe) {
             if (statusFipe === "success" && dataFipe.length > 0) {
                 valorFipe = parseFloat(dataFipe[0].valor.replace("R$", "").replace(".", "").replace(",", "."));
-                $("#resultado").append("<br>Seu carro é: "+dataFipe[0].modelo+" ano "+dataFipe[0].anoModelo+" Valor FIPE: R$" + dataFipe[0].valor);
+                $("#resultado-fipe").append("<br>Modelo:<br> "+dataFipe[0].modelo+" <br> ano "+dataFipe[0].anoModelo+" <br> Valor FIPE: R$" + dataFipe[0].valor);
                 console.log(dataFipe[0])
                 
                 // Verifica se a cidade é "Rio de Janeiro" e o valor do carro é maior que 30.000

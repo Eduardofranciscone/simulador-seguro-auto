@@ -9,7 +9,7 @@ Projeto desenvolvido para simular a **análise e aprovação de seguro automotiv
 ## 🔗 Demo do Projeto
 
 <!-- <p align="center">
-  <a href="https://venerable-fairy-f880a9.netlify.app/" target="_blank">
+  <a href="" target="_blank">
     🚀 <strong>Acesse a simulação online</strong>
   </a>
 </p> -->
