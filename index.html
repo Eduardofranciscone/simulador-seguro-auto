@@ -12,40 +12,47 @@
 </head>
 
 <body>
-    <!-- <div class="modal fade bg-white" id="meuModal" tabindex="-1" aria-hidden="true">
+    <div class="modal fade bg-white" id="myModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content bg-dark text-white">
 
                 <div class="modal-header">
                     <h5 class="modal-title">Bem-vindo à simulação de seguro de veículos.
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
-                        <path d="M7 6a1 1 0 0 1 2 0v1H7z"/>
-                        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
+                            <path d="M7 6a1 1 0 0 1 2 0v1H7z" />
+                            <path
+                                d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0" />
                         </svg>
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
                 <div class="modal-body">
-                   <h6>
-                    Este sistema tem como objetivo demonstrar, de forma simples, como funciona o processo básico de análise para aprovação de um seguro.
-                   </h6>
-                   <p>
-                    O funcionamento ocorre da seguinte maneira:
+                    <h6>
+                        Este sistema tem como objetivo demonstrar, de forma simples, como funciona o processo básico de
+                        análise para aprovação de um seguro.
+                    </h6>
+                    <p>
+                        O funcionamento ocorre da seguinte maneira:
                     <ul>
-                        <li>Primeiro, o sistema consulta o CEP informado para identificar a cidade do proprietário do veículo</li>
-                        <li>Em seguida, é realizada uma consulta à Tabela FIPE para obter o valor e as informações do veículo.</li>
+                        <li>Primeiro, o sistema consulta o CEP informado para identificar a cidade do proprietário do
+                            veículo</li>
+                        <li>Em seguida, é realizada uma consulta à Tabela FIPE para obter o valor e as informações do
+                            veículo.</li>
                         <li>
-                            Após essas consultas, o sistema aplica regras de análise para decidir se o seguro será aprovado ou não.
+                            Após essas consultas, o sistema aplica regras de análise para decidir se o seguro será
+                            aprovado ou não.
                         </li>
                     </ul>
-                   </p>
-                   <h6>O seguro será aprovado quando:</h6>
-                   <ul>
-                    <li>A cidade identificada for Rio de Janeiro</li>
-                    <li>O valor do veículo, de acordo com a Tabela FIPE, for superior a R$ 30.000,00</li>
-                   </ul>
-                   <p>Caso qualquer um desses critérios não seja atendido, o seguro será reprovado.Esta simulação tem caráter demonstrativo e não representa uma análise real de seguradoras.</p>
+                    </p>
+                    <h6>O seguro será aprovado quando:</h6>
+                    <ul>
+                        <li>A cidade identificada for Rio de Janeiro</li>
+                        <li>O valor do veículo, de acordo com a Tabela FIPE, for superior a R$ 30.000,00</li>
+                    </ul>
+                    <p>Caso qualquer um desses critérios não seja atendido, o seguro será reprovado.Esta simulação tem
+                        caráter demonstrativo e não representa uma análise real de seguradoras.</p>
                 </div>
 
                 <div class="modal-footer">
@@ -54,82 +61,85 @@
 
             </div>
         </div>
-    </div> -->
-    <div class="main">
-        <nav class="navbar navbar-expand-md bg-light navbar-light text-dark shadow ">
-            <div class="container-fluid d-flex align-items-center px-5 ">
-                <a href="#" class="navbar-brand">
-                    <i class="bi bi-car-front-fill navbar-brand"></i>
-                    <h3 class="d-inline-block">Seguro Auto</h3>
-                </a>
+    </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <nav class="navbar navbar-expand-md bg-light navbar-light text-dark shadow ">
+        <div class="container-fluid d-flex align-items-center px-5 ">
+            <a href="#" class="navbar-brand">
+                <i class="bi bi-car-front-fill navbar-brand"></i>
+                <h3 class="d-inline-block">Seguro Auto</h3>
+            </a>
 
-                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                    <ul class="navbar-nav nav-pills nav-fill">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">contato</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active" href="#">Simular seguro</a>
-                        </li>
-                    </ul>
-                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal">regras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contato</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#">Simular seguro</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <div class="main">
     </div>
 
 
     <div class="container p-4 d-flex align-items-center flex-column">
         <h5>Descubra se seu seguro auto foi aprovado <span>simulando</span> <br> as condições no seu CEP e no valor FIPE
             do veículo</h5>
+            <button type="button" class="btn btn-regras " data-bs-toggle="modal" data-bs-target="#myModal">
+                Acessa Regras
+            </button>
         <section class="cards row gap-4 mt-4 align-items-stretch">
 
-    <div class="col-md-5 d-flex">
-        <div class="card flex-fill d-flex flex-column">
-            <div class="card-header text-center">
-                <i class="bi bi-geo-alt-fill"></i>
-                <h6 class="d-inline-block text-center">Consulta do CEP</h6>
+            <div class="col-md-5 d-flex">
+                <div class="card flex-fill d-flex flex-column">
+                    <div class="card-header text-center">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <h6 class="d-inline-block text-center">Consulta do CEP</h6>
 
-                <p>Informe seu CEP para verificar a cidade.</p>
-                <input type="text" id="cep" placeholder="Digite seu CEP">
-                <input type="button" id="btn-cep" value="Buscar CEP">
+                        <p>Informe seu CEP para verificar a cidade.</p>
+                        <input type="text" id="cep" placeholder="Digite seu CEP">
+                        <input type="button" id="btn-cep" value="Buscar CEP">
+                    </div>
+
+                    <div class="card-body resultado-1">
+                        <div id="resultado-cep"></div>
+                    </div>
+                </div>
             </div>
 
-            <div class="card-body resultado-1">
-                <div id="resultado-cep"></div>
+            <div class="col-md-5 d-flex">
+                <div class="card flex-fill d-flex flex-column">
+                    <div class="card-header text-center">
+                        <i class="bi bi-car-front-fill"></i>
+                        <h6 class="d-inline-block text-center">Consulta da Tabela FIPE</h6>
+
+                        <p>Informe o código FIPE do veículo para calcular o valor.</p>
+                        <input type="text" id="fipe" placeholder="Digite o código FIPE">
+                        <input type="button" id="btn-fipe" value="Buscar FIPE">
+                    </div>
+
+                    <div class="card-body resultado-2">
+                        <div id="resultado-fipe"></div>
+                        <div id="resultado"></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <div class="col-md-5 d-flex">
-        <div class="card flex-fill d-flex flex-column">
-            <div class="card-header text-center">
-                <i class="bi bi-car-front-fill"></i>
-                <h6 class="d-inline-block text-center">Consulta da Tabela FIPE</h6>
-
-                <p>Informe o código FIPE do veículo para calcular o valor.</p>
-                <input type="text" id="fipe" placeholder="Digite o código FIPE">
-                <input type="button" id="btn-fipe" value="Buscar FIPE">
-            </div>
-
-            <div class="card-body resultado-2">
-                <div id="resultado-fipe"></div>
-                <div id="resultado"></div>
-            </div>
-        </div>
-    </div>
-
-</section>
+        </section>
 
 
 

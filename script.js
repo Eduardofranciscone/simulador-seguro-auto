@@ -1,17 +1,15 @@
 $(document).ready(function() {
-     $("#meuModal").modal("show");
-
     let cidade;
     let valorFipe;
 
     // Função para buscar o CEP na BrasilAPI
     $("#btn-cep").click(function() {
-        const cep = $("#cep").val().replace(/\D/g, '');  // Remove caracteres não numéricos
-        let urlCep = "https://brasilapi.com.br/api/cep/v2/" + cep;
+        const cep = $("#cep").val().replace(/\D/g, '');  // isso serve pra Remover caracteres não numéricos
+        let urlCep = "https://brasilapi.com.br/api/cep/v2/" + cep; // URL da API BrasilAPI para CEP
 
-        $.get(urlCep, function(dataCep, statusCep) {
-            if (statusCep === "success") {
-                const rua = dataCep.street;
+        $.get(urlCep, function(dataCep, statusCep) { // Requisição GET para a API
+            if (statusCep === "success") {     // Verifica se a requisição foi bem-sucedida
+                const rua = dataCep.street;       
                 const bairro = dataCep.neighborhood;
                 cidade = dataCep.city;
                 
@@ -31,7 +29,7 @@ $(document).ready(function() {
 
         $.get(urlFipe, function(dataFipe, statusFipe) {
             if (statusFipe === "success" && dataFipe.length > 0) {
-                valorFipe = parseFloat(dataFipe[0].valor.replace("R$", "").replace(".", "").replace(",", "."));
+                valorFipe = parseFloat(dataFipe[0].valor.replace("R$", "").replace(".", "").replace(",", ".")); // Converte o valor FIPE para número
                 $("#resultado-fipe").append("<br>Modelo:<br> "+dataFipe[0].modelo+" <br> ano "+dataFipe[0].anoModelo+" <br> Valor FIPE: R$" + dataFipe[0].valor);
                 console.log(dataFipe[0])
                 
