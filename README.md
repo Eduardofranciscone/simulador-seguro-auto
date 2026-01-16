@@ -8,11 +8,11 @@ Projeto desenvolvido para simular a **análise e aprovação de seguro automotiv
 
 ## 🔗 Demo do Projeto
 
-<!-- <p align="center">
-  <a href="" target="_blank">
+ <p align="center">
+  <a href="https://wondrous-chebakia-146306.netlify.app/" target="_blank">
     🚀 <strong>Acesse a simulação online</strong>
   </a>
-</p> -->
+</p> 
 
 ---
 
