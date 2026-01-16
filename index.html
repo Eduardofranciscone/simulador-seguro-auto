@@ -92,35 +92,45 @@
     <div class="container p-4 d-flex align-items-center flex-column">
         <h5>Descubra se seu seguro auto foi aprovado <span>simulando</span> <br> as condições no seu CEP e no valor FIPE
             do veículo</h5>
-        <section class="cards d-flex justify-content-center gap-4 mt-4 flex-wrap">
-            <div class="card ">
-                <div class="card-header text-center">
-                    <i class="bi bi-geo-alt-fill">
-                        <h6 class="d-inline-block text-center">Consulta do cep</h6>
-                    </i>
-                    <p>Informe seu CEP para verificar a cidade.</p>
-                    <input type="text" id="cep" placeholder="Digite seu CEP">
-                    <input type="button" name="btn" id="btn-cep" value="Buscar cep">
-                </div>
-                <div class="card-body resultado-1">
-                    <div id="resultado-cep"></div>
-                </div>
+        <section class="cards row gap-4 mt-4 align-items-stretch">
+
+    <div class="col-md-5 d-flex">
+        <div class="card flex-fill d-flex flex-column">
+            <div class="card-header text-center">
+                <i class="bi bi-geo-alt-fill"></i>
+                <h6 class="d-inline-block text-center">Consulta do CEP</h6>
+
+                <p>Informe seu CEP para verificar a cidade.</p>
+                <input type="text" id="cep" placeholder="Digite seu CEP">
+                <input type="button" id="btn-cep" value="Buscar CEP">
             </div>
-            <div class="card ">
-                <div class="card-header text-center">
-                    <i class="bi bi-car-front-fill">
-                        <h6 class="d-inline-block text-center">Consulta da Tabela FIPE</h6>
-                    </i>
-                    <p>Informe o código FIPE do veículo para calcular o valor.</p>
-                    <input type="text" id="fipe" placeholder="Digite o código FIPE" required>
-                    <input type="button" name="btn" id="btn-fipe" value="Buscar Fipe">
-                </div>
-                <div class="card-body resultado-2">
-                    <div id="resultado-fipe"></div>
-                    <div id="resultado"></div>
-                </div>
+
+            <div class="card-body resultado-1">
+                <div id="resultado-cep"></div>
             </div>
-        </section>
+        </div>
+    </div>
+
+    <div class="col-md-5 d-flex">
+        <div class="card flex-fill d-flex flex-column">
+            <div class="card-header text-center">
+                <i class="bi bi-car-front-fill"></i>
+                <h6 class="d-inline-block text-center">Consulta da Tabela FIPE</h6>
+
+                <p>Informe o código FIPE do veículo para calcular o valor.</p>
+                <input type="text" id="fipe" placeholder="Digite o código FIPE">
+                <input type="button" id="btn-fipe" value="Buscar FIPE">
+            </div>
+
+            <div class="card-body resultado-2">
+                <div id="resultado-fipe"></div>
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 
 
     </div>
